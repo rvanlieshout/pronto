@@ -10,7 +10,7 @@ module Pronto
           path = message.path
           line = patches.find_line(message.full_path, message.line.new_lineno)
 
-          body = body + " (#{message.path}:#{line}"
+          body = body + " (#{message.path}:#{line.position}"
 
           create_comment(client, head, body, path, line.position)
         end
