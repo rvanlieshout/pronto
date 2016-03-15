@@ -14,6 +14,7 @@ module Pronto
       'github' => GithubFormatter,
       'github_pr' => GithubPullRequestFormatter,
       'gitlab' => GitlabFormatter,
+      'gitlab_mr' => Pronto::Formatter::GitlabMergeRequestFormatter,
       'json' => JsonFormatter,
       'checkstyle' => CheckstyleFormatter,
       'text' => TextFormatter,
